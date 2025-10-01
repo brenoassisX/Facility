@@ -16,7 +16,7 @@ public class NewJFrame extends javax.swing.JFrame {
      */
     public NewJFrame() {
         initComponents();
-        getContentPane().setBackground(new java.awt.Color(177, 179, 158));
+        getContentPane().setBackground(new java.awt.Color(0, 75, 135));
     }
 
     /**
@@ -31,15 +31,16 @@ public class NewJFrame extends javax.swing.JFrame {
         logo = new javax.swing.JLabel();
         wrapperPanel = new javax.swing.JPanel();
         menu = new javax.swing.JPanel();
-        menuBtn6 = new javax.swing.JButton();
-        menuBtn5 = new javax.swing.JButton();
-        menuBtn2 = new javax.swing.JButton();
-        menuBtn4 = new javax.swing.JButton();
-        menuBtn3 = new javax.swing.JButton();
         menuBtn1 = new javax.swing.JButton();
+        menuBtn2 = new javax.swing.JButton();
+        menuBtn3 = new javax.swing.JButton();
+        menuBtn4 = new javax.swing.JButton();
+        menuBtn5 = new javax.swing.JButton();
+        menuBtn6 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        getContentPane().setLayout(new java.awt.BorderLayout());
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1 (1).png"))); // NOI18N
         getContentPane().add(logo, java.awt.BorderLayout.NORTH);
@@ -49,28 +50,19 @@ public class NewJFrame extends javax.swing.JFrame {
 
         menu.setBackground(new java.awt.Color(177, 179, 158));
         menu.setOpaque(false);
-        menu.setPreferredSize(new java.awt.Dimension(630, 255));
+        menu.setPreferredSize(new java.awt.Dimension(780, 355));
         menu.setLayout(new java.awt.GridLayout(2, 3, 30, 30));
 
-        menuBtn6.setText("GLOSSARIO");
-        menuBtn6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn6.addActionListener(new java.awt.event.ActionListener() {
+        menuBtn1.setText("AGENDA");
+        menuBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn6ActionPerformed(evt);
+                menuBtn1ActionPerformed(evt);
             }
         });
-        menu.add(menuBtn6);
+        menu.add(menuBtn1);
 
-        menuBtn5.setText("AGENDA");
-        menuBtn5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn5ActionPerformed(evt);
-            }
-        });
-        menu.add(menuBtn5);
-
-        menuBtn2.setText("AGENDA");
+        menuBtn2.setText("DICAS");
         menuBtn2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         menuBtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,6 +70,15 @@ public class NewJFrame extends javax.swing.JFrame {
             }
         });
         menu.add(menuBtn2);
+
+        menuBtn3.setText("JOGOS");
+        menuBtn3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBtn3ActionPerformed(evt);
+            }
+        });
+        menu.add(menuBtn3);
 
         menuBtn4.setText("GLOSSARIO");
         menuBtn4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -88,23 +89,23 @@ public class NewJFrame extends javax.swing.JFrame {
         });
         menu.add(menuBtn4);
 
-        menuBtn3.setText("GLOSSARIO");
-        menuBtn3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn3.addActionListener(new java.awt.event.ActionListener() {
+        menuBtn5.setText("GLOSSARIO");
+        menuBtn5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn3ActionPerformed(evt);
+                menuBtn5ActionPerformed(evt);
             }
         });
-        menu.add(menuBtn3);
+        menu.add(menuBtn5);
 
-        menuBtn1.setText("GLOSSARIO");
-        menuBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn1.addActionListener(new java.awt.event.ActionListener() {
+        menuBtn6.setText("GLOSSARIO");
+        menuBtn6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn1ActionPerformed(evt);
+                menuBtn6ActionPerformed(evt);
             }
         });
-        menu.add(menuBtn1);
+        menu.add(menuBtn6);
 
         wrapperPanel.add(menu, new java.awt.GridBagConstraints());
 
@@ -113,29 +114,29 @@ public class NewJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void menuBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn1ActionPerformed
+    private void menuBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_menuBtn1ActionPerformed
-
-    private void menuBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuBtn2ActionPerformed
+    }//GEN-LAST:event_menuBtn6ActionPerformed
 
     private void menuBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menuBtn3ActionPerformed
 
-    private void menuBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_menuBtn4ActionPerformed
-
     private void menuBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menuBtn5ActionPerformed
 
-    private void menuBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn6ActionPerformed
+    private void menuBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_menuBtn6ActionPerformed
+    }//GEN-LAST:event_menuBtn4ActionPerformed
+
+    private void menuBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuBtn2ActionPerformed
+
+    private void menuBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBtn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuBtn1ActionPerformed
 
     /**
      * @param args the command line arguments
