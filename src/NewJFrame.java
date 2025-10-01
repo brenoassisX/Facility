@@ -16,6 +16,7 @@ public class NewJFrame extends javax.swing.JFrame {
      */
     public NewJFrame() {
         initComponents();
+        getContentPane().setBackground(new java.awt.Color(177, 179, 158));
     }
 
     /**
@@ -27,58 +28,29 @@ public class NewJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        menuBtn1 = new javax.swing.JButton();
-        menuBtn2 = new javax.swing.JButton();
-        menuBtn3 = new javax.swing.JButton();
-        menuBtn4 = new javax.swing.JButton();
-        menuBtn5 = new javax.swing.JButton();
+        logo = new javax.swing.JLabel();
+        wrapperPanel = new javax.swing.JPanel();
+        menu = new javax.swing.JPanel();
         menuBtn6 = new javax.swing.JButton();
+        menuBtn5 = new javax.swing.JButton();
+        menuBtn2 = new javax.swing.JButton();
+        menuBtn4 = new javax.swing.JButton();
+        menuBtn3 = new javax.swing.JButton();
+        menuBtn1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1 (1).png"))); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1 (1).png"))); // NOI18N
+        getContentPane().add(logo, java.awt.BorderLayout.NORTH);
 
-        menuBtn1.setText("GLOSSARIO");
-        menuBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn1ActionPerformed(evt);
-            }
-        });
+        wrapperPanel.setOpaque(false);
+        wrapperPanel.setLayout(new java.awt.GridBagLayout());
 
-        menuBtn2.setText("AGENDA");
-        menuBtn2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn2ActionPerformed(evt);
-            }
-        });
-
-        menuBtn3.setText("GLOSSARIO");
-        menuBtn3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn3ActionPerformed(evt);
-            }
-        });
-
-        menuBtn4.setText("GLOSSARIO");
-        menuBtn4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn4ActionPerformed(evt);
-            }
-        });
-
-        menuBtn5.setText("AGENDA");
-        menuBtn5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        menuBtn5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuBtn5ActionPerformed(evt);
-            }
-        });
+        menu.setBackground(new java.awt.Color(177, 179, 158));
+        menu.setOpaque(false);
+        menu.setPreferredSize(new java.awt.Dimension(630, 255));
+        menu.setLayout(new java.awt.GridLayout(2, 3, 30, 30));
 
         menuBtn6.setText("GLOSSARIO");
         menuBtn6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -87,49 +59,56 @@ public class NewJFrame extends javax.swing.JFrame {
                 menuBtn6ActionPerformed(evt);
             }
         });
+        menu.add(menuBtn6);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(181, 181, 181)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(menuBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(menuBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(menuBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(menuBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(menuBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(menuBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(201, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addGap(76, 76, 76)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(menuBtn3, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(menuBtn1, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(menuBtn5, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(menuBtn6, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(menuBtn4, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(111, Short.MAX_VALUE))
-        );
+        menuBtn5.setText("AGENDA");
+        menuBtn5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBtn5ActionPerformed(evt);
+            }
+        });
+        menu.add(menuBtn5);
+
+        menuBtn2.setText("AGENDA");
+        menuBtn2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBtn2ActionPerformed(evt);
+            }
+        });
+        menu.add(menuBtn2);
+
+        menuBtn4.setText("GLOSSARIO");
+        menuBtn4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBtn4ActionPerformed(evt);
+            }
+        });
+        menu.add(menuBtn4);
+
+        menuBtn3.setText("GLOSSARIO");
+        menuBtn3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBtn3ActionPerformed(evt);
+            }
+        });
+        menu.add(menuBtn3);
+
+        menuBtn1.setText("GLOSSARIO");
+        menuBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        menuBtn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBtn1ActionPerformed(evt);
+            }
+        });
+        menu.add(menuBtn1);
+
+        wrapperPanel.add(menu, new java.awt.GridBagConstraints());
+
+        getContentPane().add(wrapperPanel, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -184,12 +163,14 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel logo;
+    private javax.swing.JPanel menu;
     private javax.swing.JButton menuBtn1;
     private javax.swing.JButton menuBtn2;
     private javax.swing.JButton menuBtn3;
     private javax.swing.JButton menuBtn4;
     private javax.swing.JButton menuBtn5;
     private javax.swing.JButton menuBtn6;
+    private javax.swing.JPanel wrapperPanel;
     // End of variables declaration//GEN-END:variables
 }
