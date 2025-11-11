@@ -1,3 +1,5 @@
+package facility.views;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -7,14 +9,14 @@
  *
  * @author BRENO
  */
-public class NewJFrame extends javax.swing.JFrame {
+public class TelaPrincipal extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(NewJFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaPrincipal.class.getName());
 
     /**
      * Creates new form NewJFrame
      */
-    public NewJFrame() {
+    public TelaPrincipal() {
         initComponents();
         getContentPane().setBackground(new java.awt.Color(0, 75, 135));
     }
@@ -40,7 +42,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().setLayout(new java.awt.BorderLayout());
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Group 1 (1).png"))); // NOI18N
         getContentPane().add(logo, java.awt.BorderLayout.NORTH);
@@ -160,7 +161,7 @@ public class NewJFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new NewJFrame().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new TelaPrincipal().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
